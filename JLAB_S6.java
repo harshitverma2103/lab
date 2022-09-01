@@ -5,9 +5,10 @@ public class JLAB_S6 {
         T1_1("CODE");
         String[] charArr = { "TEST", "car", "AbaCas" };
         T1_2(charArr);
-        T4_1(5);
-        T4_2(5);
-
+        T4_1(2);
+        T4_2(2);
+        T4_1(4);
+        T4_2(4);
     }
 
     public static void T1_1(String str) {
