@@ -6,9 +6,9 @@ public class JLAB_S2 {
             int n = arr[i];
             T2(n, 4);
             T2(n, 5);
+        }
             T3(2);
             T4("hello");
-        }
     }
 
     public static int T1(int n) {
