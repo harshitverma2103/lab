@@ -36,9 +36,9 @@ public class JLAB_S4 {
     public static void T4(int marks) {
         if (marks >= 90) {
             System.out.println("grade A");
-        } else if (marks <= 75) {
+        } else if (marks >= 75) {
             System.out.println("grade B");
-        } else if (marks <= 40) {
+        } else if (marks >= 40) {
             System.out.println("grade C");
         } else {
             System.out.println("Fail");
