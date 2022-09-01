@@ -20,7 +20,7 @@ public class JLAB_S2 {
         for (int i = 1; i <= times; i++) {
             result = result * n;
         }
-        System.out.println(times + " Power- " + n + "=" + result);
+        System.out.println(times + "thPower-" + n + "=" + result);
     }
 
     public static void T3(int n) {
