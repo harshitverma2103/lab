@@ -4,8 +4,8 @@ public class JLAB_S3 {
         int[] numArr = { 10, 9, 12, 5, 7 };
         T2(numArr);
         T3(4);
-        int[] numberarr = { 5, 13, 15, 20, 36 };
-        T4(numberarr);
+        int[] numberArr = { 5, 13, 15, 20, 36 };
+        T4(numberArr);
     }
 
     public static void T1(int n) {
@@ -34,9 +34,9 @@ public class JLAB_S3 {
         }
     }
 
-    public static void T4(int[] numberarr) {
-        for (int i = 0; i < numberarr.length; i++) {
-            T3(numberarr[i]);
+    public static void T4(int[] numberArr) {
+        for (int i = 0; i < numberArr.length; i++) {
+            T3(numberArr[i]);
         }
     }
 }
