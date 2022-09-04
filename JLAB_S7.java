@@ -5,8 +5,7 @@ public class JLAB_S7 {
         T1_1(0);
         int[] numArr = { 4, 3, 10 };
         T1_2(numArr);
-        String empty = T3("hello");
-        System.out.println(empty);
+        System.out.println(T3("hello"));
         String[] charArr = { "dad", "car", "dat" };
         for (int i = 0; i < charArr.length; i++) {
             String str1 = charArr[i];
@@ -15,9 +14,9 @@ public class JLAB_S7 {
         }
     }
 
-    public static void T1_1(int n) {
-        int x = n * n;
-        System.out.println(n + " square = " + x);
+    public static void T1_1(int inputNumber) {
+        int square = inputNumber * inputNumber;
+        System.out.println(inputNumber + " square = " + square);
     }
 
     public static void T1_2(int[] numArr) {
@@ -27,24 +26,24 @@ public class JLAB_S7 {
     }
 
     public static String T3(String str) {
-        String empty = "";
+        String result = "";
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (ch != 'l') {
-                empty = empty + ch;
+                result = result + ch;
             }
         }
-        return empty;
+        return result;
     }
 
     public static String T4(String str1) {
-        String addChar = "";
+        String modifiedString = "";
         for (int j = 0; j < str1.length(); j++) {
             char ch = str1.charAt(j);
             if (ch != 'd') {
-                addChar = addChar + ch;
+                modifiedString = modifiedString + ch;
             }
         }
-        return addChar;
+        return modifiedString;
     }
 }
