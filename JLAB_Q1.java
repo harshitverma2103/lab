@@ -1,18 +1,21 @@
 public class JLAB_Q1 {
     public static void main(String[] args) {
         T1("ZZZ");
+        T1("zackz");
         T2("tRiSeCt100");
+        T2("allsmall");
+        T2("ALLCAPS");
     }
 
     public static void T1(String word) {
-        int countchar = 0;
+        int count = 0;
         for (int index = 0; index < word.length(); index++) {
             char ch = word.charAt(index);
             if (ch == 'Z') {
-                countchar = countchar + 1;
+                count = count + 1;
             }
         }
-        System.out.println(countchar);
+        System.out.println(count);
     }
 
     public static void T2(String word) {
@@ -29,5 +32,5 @@ public class JLAB_Q1 {
         System.out.println("Lower =" + count2);
         System.out.println("Upper =" + count1);
     }
-    
+
 }
