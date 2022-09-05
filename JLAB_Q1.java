@@ -2,6 +2,7 @@ public class JLAB_Q1 {
     public static void main(String[] args) {
         T1("ZZZ");
         T1("zackz");
+        T1("ratcatmat");
         T2("tRiSeCt100");
         T2("allsmall");
         T2("ALLCAPS");
@@ -32,5 +33,4 @@ public class JLAB_Q1 {
         System.out.println("Lower =" + count2);
         System.out.println("Upper =" + count1);
     }
-
 }
