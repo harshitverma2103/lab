@@ -8,16 +8,16 @@ public class JLAB_P1 {
         T3(3);
     }
 
-    public static int T1(int a, int b) {
-        return a + b;
+    public static int T1(int firstNum, int secondNum) {
+        return firstNum + secondNum;
     }
 
     public static int T2(int number) {
-        int sum = 0;
+        int sumOfCubes = 0;
         for(int i = 1; i <= number; i++){
-            sum = sum + i * i* i;
+            sumOfCubes = sumOfCubes + i * i * i;
         }
-        return sum;
+        return sumOfCubes;
     }
 
     public static void T3(int n) {
