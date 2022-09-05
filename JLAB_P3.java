@@ -3,10 +3,12 @@ public class JLAB_P3 {
         T1(17);
         T1(14);
         T2(5);
+        T2(4);
         System.out.println(T3(2));
         System.out.println(T3(4));
         System.out.println(T3(5));
         T4(2);
+        T4(3);
         T4(5);
     }
 
@@ -53,7 +55,6 @@ public class JLAB_P3 {
             result = result + num;
             System.out.println(result);
             num = num - 1;
-
         }
     }
 }
