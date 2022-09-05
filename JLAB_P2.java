@@ -18,7 +18,7 @@ public class JLAB_P2 {
     public static int T2(int n) {
         int num = 0;
         for (int i = 1; i <= n; i++) {
-            num = i * i + 1;
+            num += i * i + 1;
         }
         return num;
     }
