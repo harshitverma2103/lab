@@ -1,53 +1,64 @@
 public class JLAB_P4 {
     public static void main(String[] args) {
-        T1(15);
-        T1(0);
-        T1(18);
-        T2(2);
-        T2(5);
-        T3(3);
-        T3(5);
+        System.out.println(T1(15));
+        System.out.println(T1(0));
+        System.out.println(T1(18));
+        System.out.println(T2(2));
+        System.out.println(T2(5));
+        System.out.println(T3(3));
+        System.out.println(T3(5));
         T4(2);
+        T4(4);
+        System.out.println(T5(13, 2));
     }
 
-    public static void T1(int n) {
-        if (n % 5 == 0) {
-            System.out.println("HELLO");
+    public static String T1(int number) {
+        String result = "";
+        if (number % 5 == 0) {
+            result += "HELLO";
         } else {
-            System.out.println("Java");
+            result += "JAVA";
         }
+        return result;
     }
 
-    public static void T2(int n) {
-        String empty = "";
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
-                empty += "x";
+    public static String T2(int number) {
+        String result = "";
+        for (int index = 1; index <= number; index++) {
+            if (index % 2 == 0) {
+                result += "x";
             } else {
-                empty += "y";
+                result += "y";
             }
         }
-        System.out.println(empty);
+        return result;
     }
 
-    public static void T3(int n) {
-        long factorial = 1;
-        for (int i = 1; i <= n; i++) {
-            factorial = factorial * i;
+    public static int T3(int number) {
+        int factorial = 1;
+        for (int index = 1; index <= number; index++) {
+            factorial = factorial * index;
         }
-        System.out.println(n + "# factorial=" + factorial);
+        return factorial;
     }
 
-    public static void T4(int n) {
-        String str = "";
-        for (int i = 1; i <= n; i++) {
-            str = str + i;
-            System.out.println(str);
+    public static void T4(int number) {
+        String pettern = "";
+        int num = number;
+        for (int index = 1; index <= number; index++) {
+            pettern += num;
+            System.out.println(pettern);
+            num = num - 1;
         }
-        String pt = "";
-        for (int i = 1; i <= n; i++) {
-            pt = pt + i;
-            System.out.println(pt);
+    }
+
+    public static String T5(int number1, int number2) {
+        String result = "";
+        int num = number1;
+        for (int index = 1; index <= number2; index++) {
+            result += num + "#";
+            num = num * num;
         }
+        return result;
     }
 }
