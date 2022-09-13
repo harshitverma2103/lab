@@ -6,6 +6,7 @@ public class JLAB_R3 {
         System.out.println(T1("ab5455"));
         T2("hello");
         T2("trisect");
+        T2("institute");
     }
 
     public static String T1(String word) {
@@ -33,7 +34,6 @@ public class JLAB_R3 {
                 result += ch;
             }
             charAdd += hash;
-            hash = hash ;
             System.out.println(result + charAdd);
         }
     }
