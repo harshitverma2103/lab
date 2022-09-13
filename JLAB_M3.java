@@ -7,24 +7,24 @@ public class JLAB_M3 {
     }
 
     public static int T1(int[] numberArr) {
-        int result = 0;
+        int count = 0;
         for (int i = 0; i < numberArr.length; i++) {
             int n = numberArr[i];
             if (n >= 0 && n <= 9) {
-                result = result + 1;
+                count = count + 1;
             }
         }
-        return result;
+        return count;
     }
 
     public static void T5(int[] numArr) {
         for (int i = 0; i < numArr.length; i++) {
             int result = 0;
-            int e = numArr[i];
-            if (e % 3 == 0 || e % 4 == 0) {
-                if (e % 12 != 0) {
-                    if (e >= 3 && e <= 99) {
-                        result = result + e;
+            int number = numArr[i];
+            if (number % 3 == 0 || number % 4 == 0) {
+                if (number % 12 != 0) {
+                    if (number >= 3 && number <= 99) {
+                        result = result + number;
                         System.out.println(result);
                     }
                 }

@@ -37,7 +37,7 @@ public class JLAB_P3 {
         int num = n;
         String result = "";
         for (int i = 1; i <= n; i++) {
-            num = num * 2;
+            num = num + n;
             result = result + "#" + num;
         }
         return result;
