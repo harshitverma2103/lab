@@ -11,6 +11,9 @@ public class JLAB_M1 {
         T4(8);
         T5(45);
         T5(56);
+        T5(78);
+        T5(96);
+        T5(75);
         T6(3);
         T7(3, 10);
         T7(4, 5);
@@ -18,6 +21,22 @@ public class JLAB_M1 {
         T8(5, 4);
         T8(7, 3);
         T8(7, 5);
+        T9(2);
+        T9(4);
+        T9(9);
+        T10(20, 50);
+        T10(21, 65);
+        T10(102, 102);
+        T10(80, 40);
+        T10(96, 1);
+        T10(80, 76);
+        T11(3);
+        T11(4);
+        T11(5);
+        T12(2456);
+        T12(1001);
+        T12(9999);
+        T12(1234);
     }
 
     public static void T1(int number) {
@@ -69,7 +88,7 @@ public class JLAB_M1 {
     }
 
     public static void T5(int number) {
-        if (number >= 100) {
+        if (number >= 95) {
             System.out.println("Grade A");
         } else if (number >= 75) {
             System.out.println("Grade B");
@@ -107,5 +126,50 @@ public class JLAB_M1 {
             System.out.print(result + "#");
         }
         System.out.println();
+    }
+
+    public static void T9(int number) {
+        String result1 = "";
+        String result2 = "";
+        for (int index = 1; index <= number; index++) {
+            if (number % index == 0) {
+                result1 += index + "#";
+            } else {
+                result2 += index + "#";
+            }
+        }
+        System.out.println("Divide+" + result1);
+        System.out.println("Notdivide=" + result2);
+    }
+
+    public static void T10(int firstNum , int secondNum) {
+        int hcf = 0;
+        for(int index = 1; index <= firstNum || index <= secondNum; index++ ) {
+            if( firstNum % index == 0 && secondNum % index == 0){
+                hcf = index;
+            }
+        }
+        System.out.println(hcf);
+    }
+
+    public static void T11(int number) {
+        String result = "";
+        String hash = "";
+        for(int index = 1; index <= number; index++) {
+            hash += "#" ;
+            result += index + hash ;
+        }
+        System.out.print(result);
+        System.out.println();
+    }
+
+    public static void T12(int number) {
+        int sum = 0;
+        for(int index = 0; index<=4; index ++) {
+            int num = number % 10;
+            sum += num;
+            number = number / 10;
+        }
+        System.out.println(sum);
     }
 }
