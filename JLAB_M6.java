@@ -4,6 +4,7 @@ public class JLAB_M6 {
         T2(5);
         T3(5);
         T5(5);
+        T6(5);
         T7(5);
     }
 
@@ -45,6 +46,14 @@ public class JLAB_M6 {
             result += num;
             System.out.println(result);
             num = num - 1;
+        }
+    }
+
+    public static void T6(int number) {
+        String pattern = "";
+        for(int index = 1; index <= number; index++) {
+            pattern = index + pattern;
+            System.out.println(pattern);
         }
     }
 
