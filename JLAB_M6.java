@@ -11,6 +11,7 @@ public class JLAB_M6 {
         T9(5);
         T10(5);
         T11(5);
+        T12(5);
     }
 
     public static void T1(int number) {
@@ -138,6 +139,16 @@ public class JLAB_M6 {
             }
             tempNum++;
             System.out.println(pattern);
+        }
+    }
+
+    public static void T12(int number) {
+        for (int index = 1; index <= number; index++) {
+            if (index % 2 == 0) {
+                System.out.println("01010");
+            } else {
+                System.out.println("10101");
+            }
         }
     }
 }
