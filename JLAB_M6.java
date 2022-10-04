@@ -12,6 +12,10 @@ public class JLAB_M6 {
         T10(5);
         T11(5);
         T12(5);
+        T13(5);
+        T14(2);
+        T14(5);
+        T14(15);
     }
 
     public static void T1(int number) {
@@ -148,6 +152,164 @@ public class JLAB_M6 {
                 System.out.println("01010");
             } else {
                 System.out.println("10101");
+            }
+        }
+    }
+
+    public static void T13(int number) {
+        String result = "";
+        int num = number;
+        for (int index = 1; index <= number; index++) {
+            if (number == num) {
+                result += num;
+                System.out.println(result);
+                num = num - 1;
+            } else {
+                result = num + result + num;
+                System.out.println(result);
+                num = num - 1;
+            }
+        }
+    }
+
+    public static void T14(int number) {
+        for (int index = 1; index <= number; index++) {
+            String result = "";
+            if (index == 1) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'A';
+                }
+                System.out.println(result);
+            } else if (index == 2) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'B';
+                }
+                System.out.println(result);
+            } else if (index == 3) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'C';
+                }
+                System.out.println(result);
+            } else if (index == 4) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'D';
+                }
+                System.out.println(result);
+            } else if (index == 5) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'E';
+                }
+                System.out.println(result);
+            } else if (index == 6) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'F';
+                }
+                System.out.println(result);
+            } else if (index == 7) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'G';
+                }
+                System.out.println(result);
+            } else if (index == 8) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'H';
+                }
+                System.out.println(result);
+            } else if (index == 9) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'I';
+                }
+                System.out.println(result);
+            } else if (index == 10) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'J';
+                }
+                System.out.println(result);
+            } else if (index == 11) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'K';
+                }
+                System.out.println(result);
+            } else if (index == 12) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'L';
+                }
+                System.out.println(result);
+            } else if (index == 13) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'M';
+                }
+                System.out.println(result);
+            } else if (index == 14) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'N';
+                }
+                System.out.println(result);
+            } else if (index == 15) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'O';
+                }
+                System.out.println(result);
+            } else if (index == 16) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'P';
+                }
+                System.out.println(result);
+            } else if (index == 17) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'Q';
+                }
+                System.out.println(result);
+            } else if (index == 18) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'R';
+                }
+                System.out.println(result);
+            } else if (index == 19) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'S';
+                }
+                System.out.println(result);
+            } else if (index == 20) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'S';
+                }
+                System.out.println(result);
+            } else if (index == 21) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'T';
+                }
+                System.out.println(result);
+            } else if (index == 22) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'U';
+                }
+                System.out.println(result);
+            } else if (index == 23) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'V';
+                }
+                System.out.println(result);
+            } else if (index == 24) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'W';
+                }
+                System.out.println(result);
+            } else if (index == 24) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'X';
+                }
+                System.out.println(result);
+            } else if (index == 25) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'Y';
+                }
+                System.out.println(result);
+            } else if (index == 26) {
+                for (int i = 1; i <= index; i++) {
+                    result += 'C';
+                }
+                System.out.println(result);
             }
         }
     }
