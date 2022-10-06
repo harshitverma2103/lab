@@ -1,3 +1,5 @@
+import javax.xml.transform.Templates;
+
 public class JLAB_M6 {
     public static void main(String[] args) {
         T1(5);
@@ -16,6 +18,7 @@ public class JLAB_M6 {
         T14(2);
         T14(5);
         T14(15);
+        T15(5);
     }
 
     public static void T1(int number) {
@@ -310,6 +313,30 @@ public class JLAB_M6 {
                     result += 'C';
                 }
                 System.out.println(result);
+            }
+        }
+    }
+
+    public static void T15(int number) {
+        String pettern = "";
+        for (int index = 1; index <= number; index++) {
+            String result = "";
+            if (index == 1) {
+                System.out.println(index);
+            } else if (index == 2) {
+                result += index + 1;
+                System.out.println(index + result + index);
+            } else if (index == 3) {
+                result += index + 1;
+                int tempNum = index + 2;
+                System.out.println(index + result + tempNum + result + index);
+            } else if (index == 4) {
+                result += index - 1;
+                int tempNum = index - 2;
+                pettern = index + result + tempNum + 1 + tempNum + result + index;
+                System.out.println(pettern);
+            } else if (index == 5) {
+                System.out.println(index + pettern + index);
             }
         }
     }
