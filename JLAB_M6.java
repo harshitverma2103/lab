@@ -1,5 +1,3 @@
-import javax.xml.transform.Templates;
-
 public class JLAB_M6 {
     public static void main(String[] args) {
         T1(5);
@@ -19,6 +17,7 @@ public class JLAB_M6 {
         T14(5);
         T14(15);
         T15(5);
+        T16(5);
     }
 
     public static void T1(int number) {
@@ -338,6 +337,17 @@ public class JLAB_M6 {
             } else if (index == 5) {
                 System.out.println(index + pettern + index);
             }
+        }
+    }
+
+    public static void T16(int number) {
+        String pettern = "";
+        int num = 10000;
+        int tempNum = 0;
+        for (int index = 1; index <= 5; index++) {
+            System.out.println(pettern + index * num);
+            pettern += tempNum;
+            num = num / 10;
         }
     }
 }
